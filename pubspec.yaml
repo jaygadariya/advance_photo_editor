@@ -1,0 +1,36 @@
+name: advance_photo_editor
+description: Edit the image
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^0.8.4+11
+  dio: ^4.0.4
+  flutter_colorpicker: ^1.0.3
+  signature: ^5.0.0
+  font_awesome_flutter: ^10.1.0
+  zoom_widget: ^0.2.1
+  screenshot: ^1.2.3
+  permission_handler: ^9.0.2
+  path_provider: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+  pedantic: ^1.11.1
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.devcare.advance.photoeditor.advance_photo_editor
+        pluginClass: AdvancePhotoEditorPlugin
+      ios:
+        pluginClass: AdvancePhotoEditorPlugin
